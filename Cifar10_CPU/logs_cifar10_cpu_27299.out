@@ -1,0 +1,54 @@
+==========================================
+SLURM_CLUSTER_NAME = paramutkarsh
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 27299
+SLURM_JOB_NAME = cifar10_mobilenet_cpu
+SLURM_JOB_NODELIST = cn026
+SLURM_JOB_USER = chuk372
+SLURM_JOB_UID = 23428
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 12542
+SLURM_SUBMIT_DIR = /home/chuk372/cpu_serial
+SLURM_CPUS_ON_NODE = 4
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 12542
+==========================================
+Device: cpu
+Downloading CIFAR-10 (if needed)...
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data/cifar-10-python.tar.gz
+Extracting ./data/cifar-10-python.tar.gz to ./data
+Files already downloaded and verified
+Train samples: 50000
+Test samples: 10000
+Total parameters: 2236682
+Starting serial training...
+
+Epoch 1/20 Time: 1551.65s Train Loss: 0.5516 Train Acc: 0.8131 Test Loss: 0.2555 Test Acc: 0.9136
+Epoch 2/20 Time: 1546.19s Train Loss: 0.2941 Train Acc: 0.8992 Test Loss: 0.2087 Test Acc: 0.9285
+Epoch 3/20 Time: 1566.97s Train Loss: 0.2404 Train Acc: 0.9171 Test Loss: 0.1859 Test Acc: 0.9372
+Epoch 4/20 Time: 1543.63s Train Loss: 0.2009 Train Acc: 0.9320 Test Loss: 0.1605 Test Acc: 0.9463
+Epoch 5/20 Time: 1575.07s Train Loss: 0.1761 Train Acc: 0.9383 Test Loss: 0.1692 Test Acc: 0.9430
+Epoch 6/20 Time: 1538.95s Train Loss: 0.1590 Train Acc: 0.9441 Test Loss: 0.1634 Test Acc: 0.9453
+Epoch 7/20 Time: 1541.39s Train Loss: 0.1424 Train Acc: 0.9507 Test Loss: 0.1682 Test Acc: 0.9464
+Epoch 8/20 Time: 1553.15s Train Loss: 0.1266 Train Acc: 0.9550 Test Loss: 0.1612 Test Acc: 0.9477
+Epoch 9/20 Time: 1560.95s Train Loss: 0.1184 Train Acc: 0.9589 Test Loss: 0.1564 Test Acc: 0.9519
+Epoch 10/20 Time: 1544.80s Train Loss: 0.1124 Train Acc: 0.9607 Test Loss: 0.1530 Test Acc: 0.9527
+Epoch 11/20 Time: 1543.50s Train Loss: 0.0760 Train Acc: 0.9740 Test Loss: 0.1329 Test Acc: 0.9572
+Epoch 12/20 Time: 1541.92s Train Loss: 0.0629 Train Acc: 0.9792 Test Loss: 0.1309 Test Acc: 0.9586
+Epoch 13/20 Time: 1543.24s Train Loss: 0.0572 Train Acc: 0.9810 Test Loss: 0.1308 Test Acc: 0.9583
+Epoch 14/20 Time: 1538.86s Train Loss: 0.0516 Train Acc: 0.9831 Test Loss: 0.1305 Test Acc: 0.9591
+Epoch 15/20 Time: 1539.75s Train Loss: 0.0488 Train Acc: 0.9841 Test Loss: 0.1268 Test Acc: 0.9617
+Epoch 16/20 Time: 1540.70s Train Loss: 0.0456 Train Acc: 0.9851 Test Loss: 0.1279 Test Acc: 0.9613
+Epoch 17/20 Time: 1549.03s Train Loss: 0.0464 Train Acc: 0.9844 Test Loss: 0.1316 Test Acc: 0.9610
+Epoch 18/20 Time: 1543.67s Train Loss: 0.0449 Train Acc: 0.9848 Test Loss: 0.1334 Test Acc: 0.9600
+Epoch 19/20 Time: 1541.59s Train Loss: 0.0417 Train Acc: 0.9864 Test Loss: 0.1319 Test Acc: 0.9602
+Epoch 20/20 Time: 1547.84s Train Loss: 0.0414 Train Acc: 0.9856 Test Loss: 0.1308 Test Acc: 0.9612
+
+Best test accuracy: 0.9617
+Total training time: 30955.22s (515.92 min)
+Saved best_mobilenetv2_cifar10_224.pth

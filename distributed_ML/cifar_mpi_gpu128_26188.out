@@ -1,0 +1,56 @@
+==========================================
+SLURM_CLUSTER_NAME = paramutkarsh
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 26188
+SLURM_JOB_NAME = cifar_mpi_gpu
+SLURM_JOB_NODELIST = gpu008
+SLURM_JOB_USER = chuk372
+SLURM_JOB_UID = 23428
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 7170
+SLURM_SUBMIT_DIR = /home/chuk372/cifar_10
+SLURM_CPUS_ON_NODE = 2
+SLURM_NTASKS = 2
+SLURM_TASK_PID = 7170
+==========================================
+======================================================================
+MPI + DDP MobileNetV2 CIFAR-10 (224x224)
+======================================================================
+Backend: nccl, World size: 2, Device(rank0): cuda:0
+Downloading CIFAR-10 (if not present)...
+Files already downloaded and verified
+Files already downloaded and verified
+Train samples: 50000
+Test samples: 10000
+Total parameters: 2236682
+Starting distributed training...
+
+Epoch 1/20 Time: 287.58s Train Loss: 0.7229 Test Loss: 0.3092 Test Acc(local): 0.8934
+Epoch 2/20 Time: 253.23s Train Loss: 0.3278 Test Loss: 0.2322 Test Acc(local): 0.9178
+Epoch 3/20 Time: 253.73s Train Loss: 0.2613 Test Loss: 0.2124 Test Acc(local): 0.9250
+Epoch 4/20 Time: 282.35s Train Loss: 0.2191 Test Loss: 0.1865 Test Acc(local): 0.9358
+Epoch 5/20 Time: 253.07s Train Loss: 0.1923 Test Loss: 0.1731 Test Acc(local): 0.9380
+Epoch 6/20 Time: 253.20s Train Loss: 0.1666 Test Loss: 0.1628 Test Acc(local): 0.9438
+Epoch 7/20 Time: 282.16s Train Loss: 0.1489 Test Loss: 0.1719 Test Acc(local): 0.9376
+Epoch 8/20 Time: 281.62s Train Loss: 0.1360 Test Loss: 0.1567 Test Acc(local): 0.9450
+Epoch 9/20 Time: 259.59s Train Loss: 0.1227 Test Loss: 0.1550 Test Acc(local): 0.9510
+Epoch 10/20 Time: 253.76s Train Loss: 0.1126 Test Loss: 0.1537 Test Acc(local): 0.9490
+Epoch 11/20 Time: 253.00s Train Loss: 0.0887 Test Loss: 0.1395 Test Acc(local): 0.9526
+Epoch 12/20 Time: 257.89s Train Loss: 0.0803 Test Loss: 0.1389 Test Acc(local): 0.9538
+Epoch 13/20 Time: 253.21s Train Loss: 0.0790 Test Loss: 0.1383 Test Acc(local): 0.9558
+Epoch 14/20 Time: 253.12s Train Loss: 0.0755 Test Loss: 0.1355 Test Acc(local): 0.9548
+Epoch 15/20 Time: 273.76s Train Loss: 0.0722 Test Loss: 0.1352 Test Acc(local): 0.9552
+Epoch 16/20 Time: 255.02s Train Loss: 0.0721 Test Loss: 0.1380 Test Acc(local): 0.9548
+Epoch 17/20 Time: 253.76s Train Loss: 0.0695 Test Loss: 0.1355 Test Acc(local): 0.9558
+Epoch 18/20 Time: 253.76s Train Loss: 0.0691 Test Loss: 0.1344 Test Acc(local): 0.9552
+Epoch 19/20 Time: 253.26s Train Loss: 0.0676 Test Loss: 0.1381 Test Acc(local): 0.9540
+Epoch 20/20 Time: 253.27s Train Loss: 0.0652 Test Loss: 0.1389 Test Acc(local): 0.9532
+
+Best local test accuracy: 0.9558
+Total training time: 5220.57s (87.01 min)
+Saved best_mobilenetv2_cifar10_224_mpi.pth
