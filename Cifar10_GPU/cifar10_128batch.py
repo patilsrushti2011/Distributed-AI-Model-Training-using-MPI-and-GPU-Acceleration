@@ -187,7 +187,6 @@ def predict_cifar10_image(img_path, topk=3, conf_threshold=0.5):
 
     return list(zip(topk_labels, topk_conf))
 
-# example (uncomment and change path):
-# top3 = predict_cifar10_image("/home/chuk398/image_classification/cat.jpg", topk=3, conf_threshold=0.5)
+
 
 
