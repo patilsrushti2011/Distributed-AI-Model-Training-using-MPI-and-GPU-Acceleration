@@ -26,26 +26,6 @@ The objective is to compare performance, scalability, and accuracy across these 
 - Demonstrate best practices in distributed machine learning  
 
 ---
-
-## Project Structure
-
-Cifar10_CPU/  
-→ Serial CPU training implementation with Slurm job script  
-
-Cifar10_128_seraial/  
-→ Single GPU batch training  
-
-distributed_ML/  
-→ Distributed MPI + DDP multi-GPU training  
-
-AIML Project Report.docx  
-→ Complete technical documentation  
-
-final_Distrubuted_Ai_model_Traning_ppt.pptx  
-→ Project presentation  
-
----
-
 ## Technologies Used
 
 - Python  
